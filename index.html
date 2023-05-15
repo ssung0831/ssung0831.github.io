@@ -12,40 +12,64 @@
 	<header>
 		<nav>
 		
-	<!-- 		<h1>Sal Tickets</h1>
+	<h1>
+        <img src="smallheadshot.jpg" alt="Small Image">
+        SAMANTHA SUNG</h1>
 			
-		<!-- 	<ul>
-				<li><a href="/Assignment4/index/index.html">Home</a></li>
-				<li><a href="/Assignment4/login/login.html">Login/Sign Up</a></li>
-				<li><a href="/Assignment4/favorites/favorites.html">Favorites</a></li>
-				<li><a href="/Assignment4/wallet/wallet.html">Wallet</a></li>
-				<li><a href="#">Sign Out</a></li>
-			</ul> -->
+		<ul>
+				<li><a href="/Assignment4/index/index.html">experience</a></li>
+				<li><a href="/Assignment4/login/login.html">projects</a></li>
+				<li><a href="/Assignment4/favorites/favorites.html">favorites</a></li>
+			</ul> 
 			
 		</nav>
 	</header>
 
 	<div class="container">
-		
-		<form class="searchForm">
-		
-			<h2>Events Search</h2>
-			
-			<hr>
-			
-			<label for="keyword">Keyword <span class="required-field">*</span></label>
-			<input type="text" id="keyword" name="keyword" required>
-			
-			<label for="location">Location <span class="required-field">*</span></label>
-			<input type="text" id="location" name="location" required>
 
-			<button type="submit" id = "searchButton">SEARCH</button>
-			
-		</form>
+        <div id = "description">
 
-		<div id="searchResults"></div>
+        <h2 id = "demo"></h2>
+
+        <p id = "desc"> I am a junior at USC studying Computer Science/Business Administration with a minor in Entertainment Industry. 
+
+            My passion lies in finding innovative ways to merge my background in technology, business, and entertainment.
+            
+            In my free time, I enjoy trying new cafes, relaxing by the beach, and binging shows that I need to catch up on!</p>
+
+
+            <button class="act" onclick="window.location.href='https://github.com/ssung0831'">
+                Find me on Github!
+            </button>
+            
+            <button class="act" onclick="window.location.href='https://linkedin.com/in/samanthasung/'">
+                Add me on Linkedin!
+            </button>
+            
+            <button class="act" onclick="window.location.href='Sung, Samantha Resume.pdf'">
+                Download my Resume!
+            </button>
+
+<script>
+    var i = 0;
+    var txt = 'Welcome! My name is Samantha Sung.';
+    var speed = 70;
+    
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    typeWriter();
+    </script>
+
+
+        </div>
 		
-		<div id="details"></div>
+        <img src="headshot.jpg" alt="Image">
 		
 	</div>
 
