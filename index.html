@@ -1,73 +1,119 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 	<title>Search/Home Page</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
-	
-	
-	
 </head>
 <body>
 	<header>
 		<nav>
-		
-	<h1>
-        <img src="smallheadshot.jpg" alt="Small Image">
-        SAMANTHA SUNG</h1>
-			
-		<ul>
-				<li><a href="/Assignment4/index/index.html">experience</a></li>
-				<li><a href="/Assignment4/login/login.html">projects</a></li>
-				<li><a href="/Assignment4/favorites/favorites.html">favorites</a></li>
-			</ul> 
-			
+			<h1>
+				<a href="index.html" id = "name">
+					<img src="smallheadshot.jpg" alt="Small Image">
+					SAMANTHA SUNG
+				</a>
+			</h1>
+			<ul>
+				<li><a href="#experience">experience</a></li>
+				<li><a href="#experience">projects</a></li>
+				<li><a href="#projects">favorites</a></li>
+			</ul>
 		</nav>
 	</header>
 
-	<div class="container">
-
-        <div id = "description">
-
-        <h2 id = "demo"></h2>
-
-        <p id = "desc"> I am a junior at USC studying Computer Science/Business Administration with a minor in Entertainment Industry. 
-
-            My passion lies in finding innovative ways to merge my background in technology, business, and entertainment.
-            
-            In my free time, I enjoy trying new cafes, relaxing by the beach, and binging shows that I need to catch up on!</p>
-
-
-        
-            <button class="button-55" onclick="window.location.href='https://linkedin.com/in/samanthasung/'" role="button">add me on linkedin</button>
-            <button class="button-55" onclick="window.location.href='https://github.com/ssung0831'" role="button">find me on github</button>
-            <button class="button-55" onclick="window.location.href='Sung, Samantha Resume.pdf'" role="button">download my resume</button>
-            
-
-
-<script>
-    var i = 0;
-    var txt = 'Welcome! My name is Samantha Sung.';
-    var speed = 70;
-    
-    function typeWriter() {
-      if (i < txt.length) {
-        document.getElementById("demo").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-      }
-    }
-
-    typeWriter();
-    </script>
-
-
-        </div>
-        <img src="headshot.jpg" alt="Image">
-        <div class="speech-bubble">"scroll below to learn more about me"</div>
-		
+    <div class="container-wrapper">
+	<div class="container" id="top">
+		<div id="description">
+			<h2 id="demo"></h2>
+			<p id="desc">
+				I am a junior at USC studying Computer Science/Business Administration with a minor in Entertainment Industry.
+				My passion lies in finding innovative ways to merge my background in technology, business, and entertainment.
+				In my free time, I enjoy trying new cafes, relaxing by the beach, and binging shows that I need to catch up on!
+			</p>
+			<button class="button-55" onclick="window.location.href='https://linkedin.com/in/samanthasung/'" role="button">add me on LinkedIn</button>
+			<button class="button-55" onclick="window.location.href='https://github.com/ssung0831'" role="button">find me on GitHub</button>
+			<button class="button-55" onclick="window.location.href='Sung, Samantha Resume.pdf'" role="button">download my resume</button>
+		</div>
+		<img src="headshot.jpg" alt="Image" id = "headshot">
+		<div class="speech-bubble">"scroll below to learn more about me"</div>
 	</div>
 
+    <div class="container" id="experience">
+        <div id="title">
+        <h2 id="exdemo"></h2>
+    </div>
+   <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="chosnwebsite.png" style="width:100%">
+      <div class="text">
+        <h3>Chosn Relationships</h3>
+        <h4>August 2022 - December 2022</h4>
+        <h3>Product Management Intern</h3>
+        <h4>At Chosn Relationships, I maintained effective communication among cross-functional teams and collaborated with the CEO to align our team goals. 
+            In addition, I contributed to the full-stack development of our web application utilizing JS, React.js, Node.js, and AWS.</h4>
+    </div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="te.jpeg" style="width:100%">
+      <div class="text">
+        <h3>USC techie</h3>
+        <h4>August 2021 - Present</h4>
+        <h3>Head Project Manager</h3>
+        <h4>As a project manager at techie, I led teams of 4-5 project analysts to implement the new Client Services Project.
+            As college students, we provided insightful pro-bono consulting and delivered impactful presentations to stakeholders.
+            Starting Fall 2023, I have been promoted to techie president.</h4>
+    </div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="empyrean.png" style="width:100%">
+      <div class="text">
+        <h3>Empyrean Technology</h3>
+        <h4>May 2023 - Present</h4>
+        <h3>Software Engineer Intern</h3>
+        <h4>As a SWE intern at a global semiconductor company, I made significant contributions to the Research & Development program. 
+            I played a key role in enhancing software reliability and improving user experience by detecting and resolving memory leaks within our products.</h4>
+    </div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="academia.png" style="width:100%">
+        <div class="text">
+            <h3>Academia Sinica</h3>
+            <h4>Summer 2023</h4>
+            <h3>Product Management Intern</h3>
+            <h4>I will be interning abroad at the most prominent research facility in Taiwan. 
+                As a ML intern, I will work on solving efficacy prediction related to RNA by
+                analyzing data and constructing various machine learning models.
+                </h4>
+        </div>
+      </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+</div>
+
 	<script src="index.js"></script>
+
+
 </body>
 </html>
