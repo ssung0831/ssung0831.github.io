@@ -15,7 +15,7 @@ document.getElementById("name").addEventListener("click", function(event) {
     });
 });
 
-document.querySelectorAll('nav ul li a[href^="#projects"]').forEach(anchor => {
+document.querySelectorAll('nav ul li a[href^="#projects.container"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({
