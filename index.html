@@ -3,20 +3,21 @@
 <head>
 	<title>Search/Home Page</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
 	<header>
 		<nav>
 			<h1>
 				<a href="index.html" id = "name">
-					<img src="smallheadshot.jpg" alt="Small Image">
+					<img src="images/smallheadshot.jpg" alt="Small Image">
 					SAMANTHA SUNG
 				</a>
 			</h1>
 			<ul>
 				<li><a href="#experience">experience</a></li>
-				<li><a href="#experience">projects</a></li>
-				<li><a href="#projects">favorites</a></li>
+				<li><a href="#projects.container">projects</a></li>
+				<!-- <li><a href="#projects">favorites</a></li> -->
 			</ul>
 		</nav>
 	</header>
@@ -26,7 +27,7 @@
 		<div id="description">
 			<h2 id="demo"></h2>
 			<p id="desc">
-				I am a junior at USC studying Computer Science/Business Administration with a minor in Entertainment Industry.
+				I am a junior at the University of Southern California studying Computer Science/Business Administration with a minor in Entertainment Industry.
 				My passion lies in finding innovative ways to merge my background in technology, business, and entertainment.
 				In my free time, I enjoy trying new cafes, relaxing by the beach, and binging shows that I need to catch up on!
 			</p>
@@ -34,21 +35,19 @@
 			<button class="button-55" onclick="window.location.href='https://github.com/ssung0831'" role="button">find me on GitHub</button>
 			<button class="button-55" onclick="window.location.href='Sung, Samantha Resume.pdf'" role="button">download my resume</button>
 		</div>
-		<img src="headshot.jpg" alt="Image" id = "headshot">
+		<img src="images/headshot.jpg" alt="Image" id = "headshot">
 		<div class="speech-bubble">"scroll below to learn more about me"</div>
 	</div>
 
     <div class="container" id="experience">
-        <div id="title">
+       
         <h2 id="exdemo"></h2>
-    </div>
-   <!-- Slideshow container -->
+
 <div class="slideshow-container">
 
-    <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
       <div class="numbertext">1 / 4</div>
-      <img src="chosnwebsite.png" style="width:100%">
+      <img src="images/chosnwebsite.png" style="width:100%">
       <div class="text">
         <h3>Chosn Relationships</h3>
         <h4>August 2022 - December 2022</h4>
@@ -60,7 +59,7 @@
   
     <div class="mySlides fade">
       <div class="numbertext">2 / 4</div>
-      <img src="te.jpeg" style="width:100%">
+      <img src="images/te.jpeg" style="width:100%">
       <div class="text">
         <h3>USC techie</h3>
         <h4>August 2021 - Present</h4>
@@ -73,19 +72,19 @@
   
     <div class="mySlides fade">
       <div class="numbertext">3 / 4</div>
-      <img src="empyrean.png" style="width:100%">
+      <img src="images/empyrean.png" style="width:100%">
       <div class="text">
         <h3>Empyrean Technology</h3>
         <h4>May 2023 - Present</h4>
         <h3>Software Engineer Intern</h3>
         <h4>As a SWE intern at a global semiconductor company, I made significant contributions to the Research & Development program. 
-            I played a key role in enhancing software reliability and improving user experience by detecting and resolving memory leaks within our products.</h4>
+            I played a key role in enhancing software reliability and improving user experience by detecting and resolving memory leaks within our products using ALPS and HMI systems.</h4>
     </div>
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">4 / 4</div>
-        <img src="academia.png" style="width:100%">
+        <img src="images/academia.png" style="width:100%">
         <div class="text">
             <h3>Academia Sinica</h3>
             <h4>Summer 2023</h4>
@@ -111,6 +110,160 @@
     <span class="dot" onclick="currentSlide(4)"></span>
   </div>
 </div>
+
+<div class="container" id="projects">
+    <h2 id="projdemo"></h2>
+
+    <div id="projects-grid">
+        <div class="square">
+          <img src="images/dstress.png" alt="Dstress">
+          <div class="overlay">
+            <div class="projdescription">
+              <div class = "pname">
+                Dstress
+              </div>
+              <div class = "pcontent">
+                This is my first ever coding project. 
+                Dstress offers users a range of tools designed to promote relaxation, mindfulness, and emotional decompression. 
+              </div>
+              <div class = "plink">
+                <a href="https://eshadupz.github.io/D-Stress/index.html" target="_blank">
+                  <i class="fa-solid fa-link">
+                  </i>
+                  </a>
+              </div>
+              <div class="plang">
+              HTML, CSS, JavaScript
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="square">
+          <img src="images/bridgingtheisles.png" alt="Isles">
+          <div class="overlay">
+            <div class="projdescription">
+              <div class = "pname">
+                Bridging The Isles
+              </div>
+              <div class = "pcontent">
+                This interactive game allows users to simulate survival by building bridges to get from island to island. 
+              </div>
+              <div class = "plink">
+                <a href="https://youtu.be/FN8EfTpiXAg" target="_blank">
+                  <i class="fa-solid fa-link">
+                  </i>
+                  </a>
+              </div>
+              <div class="plang">
+              Java
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="square">
+          <img src="images/maze2.png" alt="Maze">
+          <div class="overlay">
+            <div class="projdescription">
+              <div class = "pname">
+                Maze Solver
+              </div>
+              <div class = "pcontent">
+                This program takes any maze and uses BFS to solve the fastest way through it.
+              </div>
+              <div class = "plink">
+                (Code provided upon request)
+              </div>
+              <div class="plang">
+              C/C++
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="square">
+          <img src="images/wordle.png" alt="Wordle">
+          <div class="overlay">
+            <div class="projdescription">
+              <div class = "pname">
+                Wordle Helper
+              </div>
+              <div class = "pcontent">
+                Given the current status of a Wordle game, this program comes up with a list of all possible solutions using backtracing.
+              </div>
+              <div class = "plink">
+                <a href="https://github.com/ssung0831/WordleSolver" target="_blank">
+                  <i class="fa-solid fa-link">
+                  </i>
+                  </a>
+              </div>
+              <div class="plang">
+              C/C++
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="square">
+          <img src="images/tickets2.png" alt="Tickets">
+          <div class="overlay">
+            <div class="projdescription">
+              <div class = "pname">
+                Ticket Platform
+              </div>
+              <div class = "pcontent">
+                This platform takes in user input to search for concerts using the TicketMaster API.
+              </div>
+              <div class = "plink">
+               (Code provided upon request)
+              </div>
+              <div class="plang">
+              HTML, CSS, JS, Java
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="square">
+          <img src="images/roomiez4.png" alt="Roomiez">
+          <div class="overlay">
+            <div class="projdescription">
+              <div class = "pname">
+                Roomiez
+              </div>
+              <div class = "pcontent">
+                Roomiez is an all-in-one task management platform where users can join groups, manage tasks, and track progress on a cumulative dashboard.
+              </div>
+              <div class = "plink">
+                <a href="http://roomiezfrontend.s3-website-us-east-1.amazonaws.com/" target="_blank">
+                  <i class="fa-solid fa-link">
+                  </i>
+                  </a>
+              </div>
+              <div class="plang">
+              HTML, CSS, JS, REACT, Node.JS
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="footer-container">
+
+        <div class="contact">
+        <ul>
+            <li><a href="mailto:sysung@usc.edu">Email</a></li>
+            <li><a href="https://linkedin.com/in/samanthasung/">LinkedIn</a></li>
+            <li><a href="https://github.com/ssung0831">GitHub</a></li>
+        </ul>
+    </div>
+
+        <div class="coded-by">
+            Coded by Samantha Sung with ❤
+         </div>
+
+    </div>
+</div>
+
 
 	<script src="index.js"></script>
 

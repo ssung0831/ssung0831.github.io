@@ -1,6 +1,4 @@
-
-// Smooth scrolling for navigation links
-document.querySelectorAll('nav ul li a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('nav ul li a[href^="#experience"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({
@@ -16,6 +14,17 @@ document.getElementById("name").addEventListener("click", function(event) {
         behavior: "smooth"
     });
 });
+
+document.querySelectorAll('nav ul li a[href^="#projects"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+
 
 var i = 0;
 var txt = 'Welcome! My name is Samantha Sung.';
@@ -67,6 +76,47 @@ function typeWriter2() {
     type();
 }
 
+
+
+var projSection = document.getElementById("projects");
+var projdemo = document.getElementById("projdemo");
+var txt3 = 'projects';
+var speed = 70;
+
+var options2 = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5
+};
+
+var observer2 = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+        if (entry.intersectionRatio > 0.5) {
+            typeWriter3();
+            observer2.unobserve(projSection);
+        }
+    });
+}, options);
+
+observer2.observe(projSection);
+
+function typeWriter3() {
+    var k = 0;
+
+    function type() {
+        if (k < txt3.length) {
+            projdemo.innerHTML += txt3.charAt(k);
+            k++;
+            setTimeout(type, speed);
+        }
+    }
+
+    type();
+}
+
+
+
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -95,4 +145,5 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
 
