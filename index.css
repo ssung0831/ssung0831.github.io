@@ -400,11 +400,6 @@ h4{
    position: relative;
 }
 
-.square img {
-   max-width: 200%; 
-   max-height: 100%; 
-   transition: transform 0.3s; 
-}
 
 
 .overlay {
@@ -414,16 +409,11 @@ h4{
   width: 100%;
   height: 100%;
   background-color: rgba(241, 240, 242, 0.95);
-  opacity: 0;
-  transition: opacity 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.square:hover .overlay {
-  opacity: 1;
-}
 
 .description {
   color: #686663;
