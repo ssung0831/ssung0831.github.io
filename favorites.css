@@ -72,7 +72,6 @@ a:hover {
 
 .container {
     position: relative;
-    min-height: 50vh; 
     font-family: "Open Sans", sans-serif;
     display: flex;
     flex-direction: column; 
@@ -81,7 +80,8 @@ a:hover {
 }
 
 #description {
-    margin-top: 10vh;
+    margin-top: 20vh;
+    margin-bottom: 8vh;
     text-align: center; 
 }
 
@@ -130,3 +130,47 @@ h2 {
   margin-top: 10px;
 }
 
+
+#favs {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   justify-content: center;
+   margin-right: 2%;
+   margin-left: 2%;
+   margin-bottom: 10%;
+ }
+ 
+ .image-container {
+   overflow: hidden; 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   margin: 20px;
+   border-radius: 8%;
+ }
+ 
+ .image-container img {
+   width: auto;
+   height: 400px;
+ }
+ 
+ .image-container .image-description {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   background-color: rgba(241, 240, 242, 0.9);;
+   color:  #686663;
+   padding: 25px;
+   opacity: 0;
+   transition: opacity 0.3s;
+   border-radius: 8%;
+   text-align: center;
+ }
+ 
+ .image-container:hover .image-description {
+   opacity: 1;
+ }
