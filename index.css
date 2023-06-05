@@ -453,6 +453,13 @@ h4{
   margin: 0 10px;
 }
 
+.email-icon {
+  /* Add your desired styling properties here */
+  color: black;
+  font-size: 24px;
+  /* Other CSS properties */
+}
+
 .coded-by {
   text-align: center;
   color: #686663;
@@ -486,4 +493,8 @@ h4{
 
 .plang{
   font-style: italic;
+}
+
+.footer-icon {
+  font-size: 24px; /* Adjust the size as desired */
 }
