@@ -454,10 +454,8 @@ h4{
 }
 
 .email-icon {
-  /* Add your desired styling properties here */
   color: black;
   font-size: 24px;
-  /* Other CSS properties */
 }
 
 .coded-by {
@@ -496,5 +494,16 @@ h4{
 }
 
 .footer-icon {
-  font-size: 24px; /* Adjust the size as desired */
+  font-size: 24px;
+}
+
+.square {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.square:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ACA7CE;
 }
