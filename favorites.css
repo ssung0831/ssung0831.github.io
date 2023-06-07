@@ -176,3 +176,9 @@ h2 {
  .image-container:hover .image-description {
    opacity: 1;
  }
+
+
+.footer-icon {
+  font-size: 24px;
+}
+
