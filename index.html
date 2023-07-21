@@ -16,7 +16,7 @@
 			</h1>
 			<ul>
 				<li><a href="#experience">experience</a></li>
-				<li><a href="#projects.container">projects</a></li>
+				<li><a href="#dots">projects</a></li>
 				<li><a href="favorites.html">favorites</a></li>
 			</ul>
 		</nav>
@@ -88,9 +88,11 @@
       <div class="text">
         <h3>Empyrean Technology</h3>
         <h4>May 2023 - Present</h4>
-        <h3>Product Marketing and Operations intern</h3>
-        <h4>As a marketing intern at a global EDA company, I played a large role in planning and executing the company's signature event, the Design Automation Conference. 
-          Collaborating closely with the marketing manager, we meticulously designed the company exhibit and crafted hundreds of promotional materials, including brochures, presentations, and gifts.
+        <h3>Summer Intern</h3>
+        <h4>As a summer intern at a global EDA company, I had the opportunity to explore both the technical and business aspects of the role. 
+          Not only did I engage in SWE, identifying and resolving memory leaks in some of Empyrean's most renowned software, 
+          but I also utilized my technical expertise to plan the company's signature event, the Design Automation Conference.
+
         </h4>
     </div>
     </div>
@@ -103,7 +105,7 @@
   <br>
   
   <!-- The dots/circles -->
-  <div style="text-align:center">
+  <div id = "dots" style="text-align:center">
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
@@ -114,7 +116,15 @@
 <div class="container" id="projects">
     <h2 id="projdemo"></h2>
 
+    <div class = "proj-button">
+    <button class="button-56" id="cs-btn">Comp Sci Projects</button>
+    <button class="button-56" id="business-btn">Business Projects</button>
+  </div>
+
+
     <div id="projects-grid">
+
+      <div id = "projects-grid" class="cs-projects">
         <div class="square">
           <div class="overlay">
             <div class="projdescription">
@@ -257,6 +267,9 @@
             </div>
         </div>
         </div>
+      </div>
+
+      <div class="business-projects">
         <div class="square">
           <div class="overlay">
             <div class="projdescription">
@@ -313,6 +326,7 @@
                   </a>
               </div>
             </div>
+        </div>
         </div>
         </div>
       </div>

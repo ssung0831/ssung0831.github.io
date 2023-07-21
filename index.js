@@ -15,7 +15,7 @@ document.getElementById("name").addEventListener("click", function(event) {
     });
 });
 
-document.querySelectorAll('nav ul li a[href^="#projects.container"]').forEach(anchor => {
+document.querySelectorAll('nav ul li a[href^="#dots"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({
@@ -78,7 +78,7 @@ function typeWriter2() {
 
 
 
-var projSection = document.getElementById("projects");
+var projSection = document.getElementById("dots");
 var projdemo = document.getElementById("projdemo");
 var txt3 = 'projects';
 var speed = 70;
@@ -147,3 +147,26 @@ function showSlides(n) {
 }
 
 
+const csProjectsBtn = document.getElementById("cs-btn");
+    const businessProjectsBtn = document.getElementById("business-btn");
+
+    csProjectsBtn.addEventListener("click", () => {
+        showProjects("cs");
+    });
+
+    businessProjectsBtn.addEventListener("click", () => {
+        showProjects("business");
+    });
+
+    function showProjects(type) {
+        const csProjects = document.querySelector(".cs-projects");
+        const businessProjects = document.querySelector(".business-projects");
+
+        if (type === "cs") {
+            csProjects.style.display = "flex";
+            businessProjects.style.display = "none";
+        } else if (type === "business") {
+            csProjects.style.display = "none";
+            businessProjects.style.display = "flex";
+        }
+    }
