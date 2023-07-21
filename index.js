@@ -26,6 +26,7 @@ document.querySelectorAll('nav ul li a[href^="#dots"]').forEach(anchor => {
 
 
 
+
 var i = 0;
 var txt = 'Welcome! My name is Samantha Sung.';
 var speed = 70;
@@ -170,3 +171,16 @@ const csProjectsBtn = document.getElementById("cs-btn");
             businessProjects.style.display = "flex";
         }
     }
+
+const csBtn = document.getElementById("cs-btn");
+const businessBtn = document.getElementById("business-btn");
+
+csBtn.addEventListener("click", function () {
+  csBtn.classList.add("active-btn");
+  businessBtn.classList.remove("active-btn");
+});
+
+businessBtn.addEventListener("click", function () {
+  businessBtn.classList.add("active-btn");
+  csBtn.classList.remove("active-btn");
+});

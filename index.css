@@ -417,7 +417,7 @@ h4{
  outline: none;
  padding: .75rem;
  text-decoration: none;
- transition: all 235ms ease-in-out;
+ transition: all 150ms ease-in-out;
  border: 2px solid white;
  border-bottom-left-radius: 15px 255px;
  border-bottom-right-radius: 225px 15px;
@@ -437,6 +437,11 @@ h4{
 .button-56:focus {
  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
  border: 2px solid #41403e;
+}
+
+.active-btn {
+  border: 2px solid #41403e;
+  transition: all 150ms ease-in-out;
 }
 
 
